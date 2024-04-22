@@ -26,6 +26,7 @@ function LoginPage() {
 
     return (
         <div className="flex justify-center items-center h-screen">
+            <h1>GIT CHANGESS</h1>
             <form onSubmit={handleSubmit} className="w-full max-w-md p-4 bg-gray-200 rounded-lg">
                 <h2 className="text-xl font-semibold mb-4">Login</h2>
                 {error && <div className="text-red-500 mb-4">{error}</div>}
