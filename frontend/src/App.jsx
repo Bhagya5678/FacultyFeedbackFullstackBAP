@@ -13,7 +13,7 @@ function App() {
   useEffect(() => {
     checkLoginStatus();
   }, []);
-
+  
   const checkLoginStatus = async () => {
     try {
       // Check if the user has a login token stored in cookies
