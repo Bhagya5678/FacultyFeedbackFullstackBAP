@@ -1,0 +1,86 @@
+[
+	{
+		"email": "hod_ce@spit.ac.in",
+		"password": "123456",
+		"access_level": "admin",
+		"department": "CE"
+	},
+	{
+		"email": "cse_head@spit.ac.in",
+		"password": "123456",
+		"access_level": "admin",
+		"department": "CSE"
+	},
+	{
+		"email": "a_ce@spit.ac.in",
+		"password": "123456",
+		"access_level": "none",
+		"department": "CE"
+	},
+	{
+		"email": "b_ce@spit.ac.in",
+		"password": "123456",
+		"access_level": "none",
+		"department": "CE"
+	},
+	{
+		"email": "c_ce@spit.ac.in",
+		"password": "123456",
+		"access_level": "none",
+		"department": "CE"
+	},
+	{
+		"email": "d_ce@spit.ac.in",
+		"password": "123456",
+		"access_level": "none",
+		"department": "CE"
+	},
+	{
+		"email": "e_ce@spit.ac.in",
+		"password": "123456",
+		"access_level": "none",
+		"department": "CE"
+	},
+	{
+		"email": "f_ce@spit.ac.in",
+		"password": "123456",
+		"access_level": "none",
+		"department": "CE"
+	},
+	{
+		"email": "g_ce@spit.ac.in",
+		"password": "123456",
+		"access_level": "none",
+		"department": "CE"
+	},
+	{
+		"email": "h_ce@spit.ac.in",
+		"password": "123456",
+		"access_level": "none",
+		"department": "CE"
+	},
+	{
+		"email": "cse_faculty_a@spit.ac.in",
+		"password": "123456",
+		"access_level": "none",
+		"department": "CSE"
+	},
+	{
+		"email": "cse_faculty_b@spit.ac.in",
+		"password": "123456",
+		"access_level": "none",
+		"department": "CSE"
+	},
+	{
+		"email": "cse_faculty_c@spit.ac.in",
+		"password": "123456",
+		"access_level": "none",
+		"department": "CSE"
+	},
+	{
+		"email": "cse_faculty_d@spit.ac.in",
+		"password": "123456",
+		"access_level": "none",
+		"department": "CSE"
+	}
+]

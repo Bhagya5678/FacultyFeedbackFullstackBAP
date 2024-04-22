@@ -8,32 +8,22 @@ import DashboardPage from './components/Dashboard'; // Make sure to import your 
 
 function App() {
   const [loading, setLoading] = useState(true);
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   useEffect(() => {
     checkLoginStatus();
   }, []);
-  
+
   const checkLoginStatus = async () => {
     try {
-      // Check if the user has a login token stored in cookies
-      const token = getCookie('loginToken');
-      if (token) {
-        setIsLoggedIn(true);
-      }
+      // Check if the user has a login token stored in local storage
+      const token = localStorage.getItem('loginToken');
+      setLoading(false);
     } catch (error) {
       console.error('Error checking login status:', error);
-    } finally {
       setLoading(false);
     }
   };
-
-  const getCookie = (name) => {
-    const value = `; ${document.cookie}`;
-    const parts = value.split(`; ${name}=`);
-    if (parts.length === 2) return parts.pop().split(';').shift();
-  };
-
+  
   if (loading) {
     return <div>Loading...</div>;
   }
@@ -41,10 +31,8 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={isLoggedIn ? <DashboardPage /> : <LoginPage />} />
-        <Route path="/login" element={<LoginPage />} />
-        {/* Add more routes for other pages */}
-        <Route path="/dashboard" element={isLoggedIn ? <DashboardPage /> : <LoginPage />} />
+        <Route path="/" element={<LoginPage />} />
+        <Route path="/dashboard" element={<DashboardPage />} />
       </Routes>
     </Router>
   );
