@@ -5,6 +5,7 @@ import axios from 'axios';
 // Import your login/dashboard components here
 import LoginPage from './components/LoginPage';
 import DashboardPage from './components/Dashboard'; // Make sure to import your DashboardPage component
+import DashTemp from './dashcomps/DashTemp';
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -12,7 +13,7 @@ function App() {
   useEffect(() => {
     checkLoginStatus();
   }, []);
-
+  
   const checkLoginStatus = async () => {
     try {
       // Check if the user has a login token stored in local storage
@@ -31,7 +32,7 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<LoginPage />} />
+        <Route path="/" element={<DashTemp />} />
         <Route path="/dashboard" element={<DashboardPage />} />
       </Routes>
     </Router>
